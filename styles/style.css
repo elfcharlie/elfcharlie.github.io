@@ -41,8 +41,11 @@
     height: max-content;
     float: left;
 }
-.wohoText{
-    margin-top: 4cm;
+.woho{
+    margin-top: 10cm;
     margin-left: 4cm;
     background-color: violet;
+    padding: 10px;
+    border-radius: 100%;
+    width:fit-content;
 }
