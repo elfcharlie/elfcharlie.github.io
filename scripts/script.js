@@ -48,3 +48,6 @@ function whoPaysWho(){
 function sheepherder(){
     window.location.href = "https://github.com/elfcharlie/sheepherder";
 }
+function spacemania(){
+    window.location.href = "https://github.com/elfcharlie/spaceman-ia";
+}

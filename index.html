@@ -15,21 +15,23 @@
         <div id="button1" class="button" onclick="pushButton()">UNCLICKED</div>
         <div id="button2" class="loginButton" onclick="loginButton()">Hundbild</div>
         <div id="button3" class="previousButton" onClick="previousPic()">Backa</div>
-        <div id="youDog">
-            <img id="dogImage" class="dogImage"><br>
+        <div id="youDog" class="youDog">
+            <img id="dogImage" class="dogImage">
+            <div id="loginForm" class="loginForm">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <button class="button" onClick="submitForm()">Submit</button>
+            </div>
         </div>
-        <div id="loginForm" class="loginForm">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <button class="button" onClick="submitForm()">Submit</button>
-        </div>
-        <div id="youText"></div>
+
+        <div id="youText" class="youText"></div>
         <div id="wohoText" class="woho">YEEY I HAVE MY OWN WEBSITE</div>
         <div class="links">
             <img src="images/calculator-money-icon.png" id="whoPaysWho" class="link" onClick="whoPaysWho()">
             <img src="images/sheep.png" id="sheepherder" class="link" onClick="sheepherder()">
+            <img src="images/astronaut-icon.png" id="spacemania" class="link" onClick="spacemania()">
         </div>
         <script src="scripts/script.js"></script>
     </body>
