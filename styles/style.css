@@ -1,3 +1,12 @@
+.h1{
+    background-color: rgba(61, 80, 173, 0.556);
+}
+.h1Text{
+    position: relative;
+    left:40%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
 .button{
     color:blueviolet;
     background-color: aquamarine;
@@ -48,4 +57,13 @@
     padding: 10px;
     border-radius: 100%;
     width:fit-content;
+}
+.links{
+    background-color: blue;
+    height: 1cm;
+}
+.link{
+    margin-left: 1cm;
+    height: 0.9cm;
+    width:0.9cm
 }

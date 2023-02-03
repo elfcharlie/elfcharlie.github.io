@@ -40,5 +40,11 @@ function submitForm(){
     parent.appendChild(fnameNode);
     parent.appendChild(lnameNode);
     loginButton();
+}
 
+function whoPaysWho(){
+    window.location.href = "https://github.com/elfcharlie/whopayswho";
+}
+function sheepherder(){
+    window.location.href = "https://github.com/elfcharlie/sheepherder";
 }

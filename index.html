@@ -7,8 +7,11 @@
         <link rel="stylesheet" href="styles/style.css">
         <title>My first webpage</title>
     </head>
-    <body>
-        <h2>THIS is h2</h2>
+    <body background="images/background.jpg">
+        
+        <div class="h1">
+            <div class="h1Text">WELCOME</div>
+        </div>
         <div id="button1" class="button" onclick="pushButton()">UNCLICKED</div>
         <div id="button2" class="loginButton" onclick="loginButton()">Hundbild</div>
         <div id="button3" class="previousButton" onClick="previousPic()">Backa</div>
@@ -24,6 +27,10 @@
         </div>
         <div id="youText"></div>
         <div id="wohoText" class="woho">YEEY I HAVE MY OWN WEBSITE</div>
+        <div class="links">
+            <img src="images/calculator-money-icon.png" id="whoPaysWho" class="link" onClick="whoPaysWho()">
+            <img src="images/sheep.png" id="sheepherder" class="link" onClick="sheepherder()">
+        </div>
         <script src="scripts/script.js"></script>
     </body>
 </html>
