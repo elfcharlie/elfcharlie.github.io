@@ -41,3 +41,8 @@
     height: max-content;
     float: left;
 }
+.wohoText{
+    margin-top: 4cm;
+    margin-left: 4cm;
+    background-color: violet;
+}
