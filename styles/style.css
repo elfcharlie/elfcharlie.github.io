@@ -7,6 +7,7 @@ html, body {
     background-color: rgba(0, 182, 128, 0.5);
     display: flex;
     justify-content: center;
+    
 }
 .h1Text{
     
@@ -19,8 +20,12 @@ html, body {
     color:blueviolet;
     background-color: aquamarine;
     width:max-content;
+    transition: all .2s ease-in-out;
 }
-.loginButton{
+.button:hover{
+    transform: scale(1.2);
+}
+.dogPicButton{
     margin:auto;
     margin-top:10px;
     color:black;
@@ -29,6 +34,10 @@ html, body {
     padding:5px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.dogPicButton:hover{
+    transform: scale(1.2);
 }
 .youDog{
     display: flex;
@@ -56,14 +65,18 @@ html, body {
     margin-top:10px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.previousButton:hover{
+    transform: scale(1.2);
 }
 .loginForm{
     vertical-align: middle;
     padding: 2px;
     border: 2px solid;
     border-color: blueviolet;
+    background-color: rgb(188, 117, 255);
     border-radius: 10px;
-    background-color: rgba(137, 42, 226, 0.604);
     width: max-content;
     height: max-content;
 }
@@ -72,12 +85,13 @@ html, body {
     justify-content: center;
     background-color: violet;
     margin: auto;
-    margin-top: 1cm;
     padding: 10px;
     border-radius: 50%;
     width:fit-content;
-    
+    height:fit-content;
+    cursor: pointer;
 }
+
 .links{
     left:0px;
     min-width: 100%;

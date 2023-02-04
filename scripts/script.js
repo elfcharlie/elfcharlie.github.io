@@ -1,3 +1,34 @@
+function intro() {
+    document.getElementById("welcome").style.transform = "translateY(0%)";
+    setTimeout(() => {
+      writeLogoText("Welcome to my website!");
+    }, 500)
+  }
+function setBackgroundImage(){
+    var loginForm = document.getElementById("loginForm");
+    fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    .then((response) => response.json())
+    .then((data) => {
+        document.body.style.backgroundImage = "url(" + data.hdurl + ")"; 
+    });
+}
+  
+setTimeout(intro, 500)
+setBackgroundImage();
+
+function writeLogoText(slogan) {
+    for (let i = 0; i < slogan.length; i++) {
+      setTimeout(() => {
+        if (slogan[i] == slogan[i].toUpperCase()) {
+          document.getElementById("welcome").innerHTML += "<b>" + slogan[i] + "</b>";
+        }
+        else {
+          document.getElementById("welcome").innerHTML += slogan[i];
+        }
+      }, 100 * i)
+    }
+  }
+
 var pic = "";
 var previousPicture ="";
 
@@ -10,7 +41,7 @@ function pushButton(){
     }
 }
 
-function loginButton(){
+function dogPicButton(){
     //location.href = 'https://google.com';
     var dogImage = document.getElementById('dogImage');
     fetch('https://dog.ceo/api/breeds/image/random')
