@@ -7,9 +7,7 @@ function intro() {
 function setBackgroundImage(){
     var loginForm = document.getElementById("loginForm");
     fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-    .then((response) => {
-        response.json();
-    })
+    .then((response) => response.json())
     .then((data) => {
         document.body.style.backgroundImage = "url(" + data.hdurl + ")"; 
     });
@@ -47,9 +45,7 @@ var previousDogPic = "";
 function dogPicButton(){
     var dogImage = document.getElementById('dogImage');
     fetch('https://dog.ceo/api/breeds/image/random')
-    .then((response) => {
-        response.json();
-    })
+    .then((response) => response.json())
     .then((data) => {
         previousDogPic = dogImage.src;
         dogImage.src = data.message; 
