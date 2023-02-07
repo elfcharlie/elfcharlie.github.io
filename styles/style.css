@@ -1,6 +1,10 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .h1{
@@ -16,7 +20,7 @@ html, body {
 }
 .button{
     margin:auto;
-    margin-top: 1cm;
+    margin-top: 0.1cm;
     color:blueviolet;
     background-color: aquamarine;
     width:max-content;
@@ -27,7 +31,7 @@ html, body {
 }
 .dogPicButton{
     margin:auto;
-    margin-top:10px;
+    margin-top:5px;
     color:black;
     background-color:rgba(159, 0, 0, 0.374);
     width:max-content;
@@ -62,7 +66,7 @@ html, body {
     background-color:rgba(134, 120, 242, 0.739);
     width:max-content;
     padding:5px;
-    margin-top:10px;
+    margin-top:5px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 5px;
     transition: all .2s ease-in-out;
@@ -85,6 +89,7 @@ html, body {
     justify-content: center;
     background-color: violet;
     margin: auto;
+    margin-bottom: 2cm;
     padding: 10px;
     border-radius: 50%;
     width:fit-content;
@@ -97,7 +102,7 @@ html, body {
     min-width: 100%;
     background-color: rgb(0, 182, 128);
     height: 1cm;
-    position:absolute;
+    position: fixed;
     bottom:0px;
     justify-content: center;
     display: grid;
@@ -108,4 +113,13 @@ html, body {
     margin-top: 0.1cm;
     height: 0.8cm;
     width: 0.8cm;
+}
+
+.osm-map{
+    margin: auto;
+    margin-top: 1cm;
+    margin-bottom: 0.1cm;
+    height:300px;
+    width:400px;
+    border-radius: 25px;
 }
