@@ -26,6 +26,9 @@ html, body {
     width:max-content;
     transition: all .2s ease-in-out;
 }
+.submitButton{
+    margin-left: 8px;
+}
 
 .dogPicButton{
     margin:auto;
@@ -75,7 +78,7 @@ html, body {
     border-color: blueviolet;
     background-color: rgb(188, 117, 255);
     border-radius: 10px;
-    width: max-content;
+    width:auto;
     height: max-content;
 }
 .woho{
@@ -124,6 +127,9 @@ html, body {
     }
     .button:hover{
         transform: scale(1.2);
+    }
+    .submitButton:hover{
+        transform: scaleX(1.2);
     }
     .previousButton:hover{
         transform: scale(1.2);
