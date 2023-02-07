@@ -47,13 +47,13 @@ function dogPicButton(){
     fetch('https://dog.ceo/api/breeds/image/random')
     .then((response) => response.json())
     .then((data) => {
+        previousDogPics.push(previousDogPic);
         previousDogPic = dogImage.src;
         dogImage.src = data.message; 
     });
     if (document.getElementById('button3').style.display == "none"){
         document.getElementById('button3').style.display = "block";
     }
-    previousDogPics.push(previousDogPic);
     console.log(previousDogPics);
     }
     
