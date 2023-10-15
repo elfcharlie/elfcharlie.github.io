@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="styles/style.css">
-        <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
-        <title>My first webpage</title>
-    </head>
-    <body>
-        
-        <div class="h1">
-            <div id="welcome" class="h1Text"></div>
-        </div>
-        <div id="osm-map" class="osm-map"></div>
-        <div id="button1" class="button" onclick="pushButton()">UNCLICKED</div>
-        <div id="button2" class="dogPicButton" onclick="dogPicButton()">Hundbild</div>
-        <div id="button3" class="previousButton" onClick="previousPic()">Backa</div>
-        <div id="youDog" class="youDog">
-            <img id="dogImage" class="dogImage">
-            <div id="loginForm" class="loginForm">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="location">Location:</label><br>
-                <input type="text" id="location" name="location"><br>
-                <button class="button submitButton" onClick="submitForm()">Submit</button>
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <div id="youText" class="youText"></div>
-        <div id="wohoText" class="woho">YEEY I HAVE MY OWN WEBSITE</div>
-        <div class="links">
-            <img src="images/calculator-money-icon.png" id="whoPaysWho" class="link" onClick="whoPaysWho()">
-            <img src="images/sheep.png" id="sheepherder" class="link" onClick="sheepherder()">
-            <img src="images/astronaut-icon.png" id="spacemania" class="link" onClick="spacemania()">
-        </div>
-        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-        <script src="scripts/script.js"></script>
-    </body>
+    <header>
+        <h1>Charlie Elf</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my personal website! I'm a passionate web developer with a love for creating
+            innovative and user-friendly web applications.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul id="repo-list">
+            <!-- GitHub repositories will be dynamically loaded here using JavaScript -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact me: charlie.elf94@gmail.com</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
