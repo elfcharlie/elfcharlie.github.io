@@ -28,3 +28,25 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Add styles for the repo links */
+#repo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#repo-list li {
+    margin-bottom: 10px;
+}
+
+#repo-list a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #0366d6; /* GitHub link color */
+    transition: color 0.3s ease;
+}
+
+#repo-list a:hover {
+    color: #04488e; /* Hover color */
+}
