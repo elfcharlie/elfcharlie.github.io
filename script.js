@@ -30,6 +30,16 @@
       })
       .catch(error => console.error("Fel vid hämtning av persondata:", error));
   });
+
+  fetch('employees.json')
+  .then(res => res.json())
+  .then(data => {
+    const person = data.find(p => p.name === "Lars Dahlin");
+    if (person) {
+      buildContactCard(person);
+    }
+  })
+  .catch(err => console.error("Fel vid hämtning:", err));
   
   // Bygger om alla kort utifrån aktuell fönsterstorlek
   function buildCards() {
@@ -86,6 +96,31 @@
       });
     }, 300); // matchar transition-tiden från CSS
   }
+
+  function buildContactCard(person) {
+  const container = document.getElementById('contact-cards');
+
+  let card;
+  
+    // Statisk kort för desktop
+    card = `
+      <div class="person-card card-static">
+        <img src="${person.image}" alt="${person.name}" />
+        <div class="person-info">
+          <h3>${person.name}</h3>
+          <p class="title">${person.title}</p>
+          <p class="contact-info"><strong>${person.phonenumber}<strong></p>
+          <p class="contact-info"> 
+              <a href="mailto:larsdahlin68@gmail.com" class="link">larsdahlin68@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    `;
+  
+  // Skriv in kortet i containern (ersätt allt innehåll)
+  container.innerHTML = card;
+}
+
   
   
   // Lyssna på fönsterstorlek och uppdatera kort vid behov

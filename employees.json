@@ -3,12 +3,14 @@
     "name": "Lars Dahlin",
     "title": "VD",
     "image": "images/lars_dahlin.jpg",
-    "description": "Lars har lång erfarenhet av skogsbruk och investeringar."
+    "description": "Lars har lång erfarenhet av skogsbruk och investeringar.",
+    "phonenumber": "073-311 85 31",
+    "email": "lardahlin68@gmail.com"
   },
   {
     "name": "Birgitta Dahlin",
     "title": "Ordförande",
-    "image": "images/birgitta_dahlin.jpg",
+    "image": "images/birgitta_dahlin_2.jpg",
     "description": "Birgitta har gedigen erfarenhet inom ekonomi och företagsledning."
   },
   {

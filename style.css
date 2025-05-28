@@ -57,7 +57,7 @@ body {
   
   main {
     padding: 40px 20px;
-    width: 80%;
+    width: 70%;
     max-width: 80%; /* kortens max-width + padding */
     margin: 20px auto;
     background-color: rgba(255, 255, 255, 0.92);
@@ -71,6 +71,9 @@ body {
     margin-bottom: 30px;
     flex: none;
     width: 100%;
+  }
+  section h2 {
+    margin-left: 12%;
   }
 
   .wrapper {
@@ -101,9 +104,7 @@ body {
   }
 
   @media (min-width: 601px) {
-    footer {
-      position: fixed;
-    }
+
     .card-flip {
         display: none;
     }
@@ -271,22 +272,14 @@ body {
   }
 
   .contact-info {
-    background-color: #e0efe4;
-    padding: 10px 15px;
-    border-left: 4px solid #227a3b;
-    border-radius: 6px;
-    margin-top: 10px;
-    max-width: 300px;
-    font-size: 1rem;
     font-family: 'Segoe UI', sans-serif;
-    transition: all 0.3s ease;
   }
   .text-box-general {
     background-color: #e0efe4;
     padding: 10px 15px;
     border-left: 4px solid #227a3b;
     border-radius: 6px;
-    margin-top: 10px;
+    margin-left: 10%;
     max-width: 300px;
     font-size: 1rem;
     transition: all 0.3s ease;
