@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Lars Dahlin",
+    "title": "VD",
+    "image": "images/lars_dahlin.jpg",
+    "description": "Lars har lång erfarenhet av skogsbruk och investeringar."
+  },
+  {
+    "name": "Birgitta Dahlin",
+    "title": "Ordförande",
+    "image": "images/birgitta_dahlin.jpg",
+    "description": "Birgitta har gedigen erfarenhet inom ekonomi och företagsledning."
+  },
+  {
+    "name": "Elin Dahlin",
+    "title": "Suppleant",
+    "image": "images/elin_dahlin.jpg",
+    "description": "Elin arbetar med investeringsanalys och har stort fokus på miljömässig hållbarhet."
+  },
+  {
+    "name": "Hanna Dahlin",
+    "title": "Suppleant",
+    "image": "images/hanna_dahlin.jpg",
+    "description": "Hanna bidrar med expertis inom hållbarhetsfrågor och är en viktig del i vårt strategiska team."
+  },
+  {
+    "name": "Linnea Dahlin",
+    "title": "Suppleant",
+    "image": "images/linnea_dahlin.jpg",
+    "description": "Linnea stödjer företaget inom administration och kundrelationer med ett starkt engagemang."
+  }
+]

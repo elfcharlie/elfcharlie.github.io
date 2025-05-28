@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-
+  <meta charset="UTF-8">
+  <title>Dahlins Skog & Invest AB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
+<div class="wrapper">
 
     <header>
-        <h1>Charlie Elf</h1>
-        <p>Web Developer</p>
+        <h1><a href="index.html"  class="link-no-effect">Dahlins Skog & Invest AB</a></h1>
+        <nav>
+            <a href="#" data-section="welcome">Hem</a>
+            <a href="#" data-section="services">Tjänster</a>
+            <a href="#" data-section="team">Team</a>
+            <a href="#" data-section="contact">Kontakt</a>
+            <a href="#" data-section="about">Om oss</a>
+        </nav>
     </header>
+    
+    <main>
+        <section id="welcome">
+            <h2>Välkommen</h2>
+            <p>Välkommen till Dahlins Skog & Invest AB – vi erbjuder professionella tjänster inom skogsbruk och investeringar. Med lång erfarenhet och hållbarhet i fokus hjälper vi våra kunder att förverkliga sina mål.</p>
+            <a href="#" class="button">Läs mer</a>
+        </section>
+        
+  <section id="about" style="display:none;">
+      <h2>Om oss</h2>
+      <p>Vi är ett företag baserat i Sverige med starka rötter i den svenska naturen. Vi kombinerar traditionellt skogsbruk med moderna investeringsstrategier för att skapa långsiktig tillväxt för våra kunder.</p>
+  </section>
+    
+    <section id="team" style="display:none;">
+        <h2>Vår ledning</h2>
+ 
+<div id="person-cards"></div> 
+</section>  
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Welcome to my personal website! I'm a passionate web developer with a love for creating
-            innovative and user-friendly web applications.
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul id="repo-list">
-            <!-- GitHub repositories will be dynamically loaded here using JavaScript -->
+<section id="services" style="display:none;">
+    <h2>Våra tjänster</h2>
+    <div class="text-box-general">
+        <ul>
+            <li>Skogsförvaltning & rådgivning</li>
+            <li>Markinvesteringar</li>
+            <li>Hållbar utveckling och miljökonsultation</li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>Contact me: yo.email@example.com</p>
-    </footer>
+<section id="contact" style="display:none;">
+    <h2>Kontakt</h2>
+    <div class="contact-info">
+        <p id="email-adress">
+            Mejla oss på 
+            <a href="mailto:larsdahlin68@gmail.com" class="link">HÄR</a>
+        </p>
+        <p id="phone-number">
+            Telefon: <strong>+46 733 11 85 31</strong>
+        </p>
+    </div>
+</section>
+</main>
 
-    <!-- Corrected inclusion of the scripts.js file -->
-    <script src="scripts/script.js"></script>
+<footer>
+    © 2025 Dahlins Skog & Invest AB | Org.nr: 559519-3862
+</footer>
+
+<script src="script.js"></script>
+
+</div>
 </body>
 </html>
